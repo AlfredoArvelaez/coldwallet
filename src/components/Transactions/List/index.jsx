@@ -1,15 +1,14 @@
-import { useTransactions } from '@/hooks/useTransactions'
-
 import { TransactionItem } from '@/components/Transactions/Item'
+import { useTransactions } from '@/hooks/useTransactions'
 
 import styles from './transactionsList.module.scss'
 
-export function TransactionsList () {
+export function TransactionsList ({ filter }) {
   const { getTransactions } = useTransactions()
 
   return (
     <ul className={styles.transactionsList}>
-      { getTransactions().map(({ id, title, description, amount, type, date }) => {
+      { getTransactions(filter).map(({ id, title, description, amount, type, date }) => {
         return (
           <TransactionItem
             key={id}

@@ -4,7 +4,7 @@ import { transactionsReducer } from './reducer'
 export const TransactionsContext = createContext({})
 
 export function TransactionsProvider ({ children }) {
-  const [state, dispatch] = useReducer(transactionsReducer, { transactions: [], currentBalance: 0 })
+  const [state, dispatch] = useReducer(transactionsReducer, { ingresos: [], gastos: [], currentBalance: 0 })
 
   return (
     <TransactionsContext.Provider value={{ state, dispatch }}>
