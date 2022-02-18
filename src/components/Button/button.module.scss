@@ -1,0 +1,33 @@
+@use '../../styles/partials/colors';
+
+.button {
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  color: colors.$white;
+  cursor: pointer;
+  font-weight: bold;
+  height: 100%;
+  padding: 12px 8px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+
+
+.primary {
+  background-color: colors.$primary;
+
+  &:hover {
+    background-color: darken($color: colors.$primary, $amount: 20);
+  }
+}
+
+.secondary {
+  background-color: colors.$red;
+
+  &:hover {
+    background-color: darken($color: colors.$red, $amount: 10);
+  } 
+}
+

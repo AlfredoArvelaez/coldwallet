@@ -1,0 +1,45 @@
+@use '../../../styles/partials/colors';
+
+.item {
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: max-content;
+  padding: 16px;
+
+  .itemHeader {
+    line-height: 1;
+
+    .itemTitle {
+      font-size: 1em;
+    }
+
+  }
+
+  .itemDescription {
+    display: flex;
+    font-size: 0.7em;
+  }
+  
+
+  .itemDate {
+    align-self: flex-end;
+    color: colors.$gray;
+    font-size: 0.7em;
+    justify-self: end;
+  }
+
+  .amount {
+    font-weight: bold;
+    justify-self: end;
+  }
+
+  .Gasto {
+    color: colors.$red;
+  }
+
+  .Ingreso {
+    color: colors.$green;
+  }
+}

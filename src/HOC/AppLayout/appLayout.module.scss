@@ -1,0 +1,10 @@
+@use '../../styles/partials/colors';
+
+.app {
+  background-color: colors.$primary;
+  display: grid;
+  height: 100%;
+  overflow: hidden;
+  place-items: center;
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+@use '../../styles/partials/colors';
+
+.div {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 6px;
+}
+
+.input {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  outline: none;
+  padding: 12px;
+  transition: all 0.2s;
+
+  &:focus {
+    border: 2px solid colors.$primary;
+  }
+}

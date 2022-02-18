@@ -1,0 +1,47 @@
+@use '../../../styles/partials/colors';
+@use '../../../styles/partials/breakpoints';
+
+.wrapper {
+  background-color: colors.$white;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  min-width: 360px;
+  padding: 24px 36px;
+  width: 25%;
+}
+
+.header {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  text-align: center;
+
+  .subtitle {
+    color: colors.$gray;
+    font-size: 0.5em;
+    font-weight: normal;
+  }
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.amountGroup {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 60% 37%;
+  margin-bottom: 8px;
+}
+
+.error {
+  color: colors.$red;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: breakpoints.$mobile) {
+  .wrapper {
+    width: 100%
+  }
+}

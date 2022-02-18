@@ -1,0 +1,14 @@
+.modal {
+  backdrop-filter: blur(1px) brightness(90%);
+  display: grid;
+  gap: 8px;
+  height: 100%;
+  place-content: center;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.buttonWrapper {
+  width: 100%;
+}
