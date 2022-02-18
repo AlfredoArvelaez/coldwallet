@@ -8,6 +8,7 @@ Cold Wallet es una aplicación web que permite al usuario gestionar y llevar un 
 Cold Wallet cuenta con dos caracteristicas esenciales:
 - Visualización del balance actual en tiempo real. Cada nuevo registro actualizará de forma instantánea el balance mostrado en pantalla. Nada de recargar la página!
 - Formulario de registro de transacciones que permite añadir nuevos items al listado, con su respectivo título, descripción, monto y tipo.
+- Filtro de transacciones. Te permite filtrar entre ingresos y gastos. 
 
 ## Información Técnica
 Cold Wallet es una aplicativo web de tipo SPA desarrollado con las siguientes tecnologías únicamente:
@@ -30,7 +31,7 @@ También se implementó un custom Hook (useTransactions), el cual provee el esta
 
 -**getCurrentBalance**: Retorna el balance actual del usuario y lo formatea a tipo float con dos decimales de precisión.
 
--**getTransactions**: Retorna el listado de transacciones actual del usuario.
+-**getTransactions**: Retorna el listado de transacciones actual del usuario. Asimismo, recibe un parametro filter, el cual determina el listado de transacciones a mostrar.
 
 -**computeBalance**: Es la función encargada de actualizar el balance general al registrarse nuevas transacciones. 
 
